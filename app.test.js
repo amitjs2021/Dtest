@@ -12,16 +12,11 @@ afterAll(() => {
   mockFS.restore();
 });
 
-describe(`Serves up the SPA`, () => {
+describe(`Serves up the base page`, () => {
   test(`It responds to GET /`, done => {
     request(app).get(`/`)
       .expect(200)
       .end(done);
   });
-  test(`It serves static assets`, done => {
-    request(app)
-      .get('/test.css')
-      .expect(200, `body {}`)
-      .end(done);
-  })
+
 });

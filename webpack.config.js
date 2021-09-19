@@ -1,9 +1,7 @@
 var path = require('path');
 
 const server = {
-  entry: [
-    path.join(__dirname, 'app.js'),
-  ],
+  entry: path.join(__dirname, 'app.js'),
   output: {
     path: path.join(__dirname, 'build'),
     libraryTarget: 'commonjs',

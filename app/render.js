@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import { renderToStaticMarkup, renderToString } from 'react-dom/server';
 import HTML from './index';
 import HCard from './hcard';
 import { find } from './db';
@@ -10,7 +10,7 @@ export default (req, res) => (
     req.cookies.user ? find(req.cookies.user) : Promise.resolve({})
   ))
     .then(state => {
-      const content = ReactDOMServer.renderToStaticMarkup(
+      const content = renderToString(
         <HTML universalState={state}>
           <HCard {...state} />
         </HTML>
