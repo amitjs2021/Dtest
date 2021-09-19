@@ -3,7 +3,7 @@ import HTMLDocument from 'react-html-document';
 
 export default ({ children, ...props }) => (
   <HTMLDocument
-    title="Live hCard Preview"
+    title="VCard-test"
     scripts={['/app.js']}
     stylesheets={['/css/bootstrap.min.css', '/css/main.css']}
     metatags={[

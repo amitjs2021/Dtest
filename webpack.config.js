@@ -6,7 +6,7 @@ const server = {
   ],
   output: {
     path: path.join(__dirname, 'build'),
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'commonjs',
     filename: 'server.js',
     publicPath: '/',
   },
@@ -29,4 +29,4 @@ const client = Object.assign({}, server, {
   target: 'web',
 })
 
-module.exports = [ server, client ];
+module.exports = [server, client];
