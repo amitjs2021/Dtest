@@ -2,7 +2,7 @@
   "name": "Test",
   "version": "1.0.0",
   "main": "server.js",
-  "repository": "git@github.com:amitjs2021/vCard-test.git",
+  "repository": "git@github.com:amitjs2021/DTest.git",
   "author": "Amit",
   "license": "UNLICENSED",
   "private": true,
