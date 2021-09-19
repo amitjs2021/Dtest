@@ -1,0 +1,41 @@
+{
+  "name": "Test",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:amitjs2021/vCard-test.git",
+  "author": "Amit",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=8.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack -p"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-15": "^1.0.4",
+    "jest": "^21.2.1",
+    "parallel-webpack": "^2.2.0",
+    "react-test-renderer": "15",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-to-memory": "^1.0.0",
+    "mock-fs": "^4.4.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "node-persist": "^2.1.0",
+    "react": "15",
+    "react-dom": "15",
+    "react-html-document": "^3.1.0"
+  }
+}
