@@ -21,19 +21,20 @@
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.4",
     "jest": "^21.2.1",
+    "mock-fs": "^4.4.2",
     "parallel-webpack": "^2.2.0",
     "react-test-renderer": "15",
+    "supertest": "^3.0.0",
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-to-memory": "^1.0.0",
-    "mock-fs": "^4.4.2",
-    "supertest": "^3.0.0"
+    "webpack-to-memory": "^1.0.0"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "node-persist": "^2.1.0",
+    "passport": "^0.4.1",
     "react": "15",
     "react-dom": "15",
     "react-html-document": "^3.1.0"
