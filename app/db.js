@@ -1,7 +1,6 @@
 import storage from 'node-persist';
 
-storage.initSync();
-
+storage.init();
 
 const find = (id) => (
   storage.getItem(id)
