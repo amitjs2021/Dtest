@@ -17,7 +17,7 @@ const server = {
   },
   target: 'node',
 };
-
+//  entry: './app/render.js',  - finding solution for serveside renderd object 
 const client = Object.assign({}, server, {
   entry: './app/mount.js',
   output: {

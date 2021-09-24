@@ -1,19 +1,23 @@
 import React from 'react';
 import { renderToStaticMarkup, renderToString } from 'react-dom/server';
-import HTML from './index';
+import HTMLDocument from 'react-html-document';
+
 import HCard from './hcard';
 import { find } from './db';
 
 
 export default (req, res) => (
-  Promise.resolve().then(() => (
-    req.cookies.user ? find(req.cookies.user) : Promise.resolve({})
-  ))
+  find(req.cookies.user)
     .then(state => {
       const content = renderToString(
-        <HTML universalState={state}>
+        <HTMLDocument
+          title="VCard-test"
+          scripts={['/app.js']}
+          stylesheets={['/css/bootstrap.min.css', '/css/main.css']}
+          universalState={state}
+        >
           <HCard {...state} />
-        </HTML>
+        </HTMLDocument>
       );
       res.write(content);
       res.end();
